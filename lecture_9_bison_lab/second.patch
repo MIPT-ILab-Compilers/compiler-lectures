@@ -1,0 +1,146 @@
+diff --git a/cool.y b/cool.y
+index 16f1dab..7b38fbd 100644
+--- a/cool.y
++++ b/cool.y
+@@ -135,17 +135,26 @@
+     %type <class_> class
+     
+     /* You will want to change the following line. */
+-    %type <features> dummy_feature_list
+-    
++    %type <features> feature_list
++    %type <feature> feature
++
++    %type <formals> formal_list
++    %type <formal> formal
++    %type <expressions> expression_list
++    %type <expression> expression
++    %type <cases> case_list
++    %type <case> case 
++    %type <expression> let_expression   
++
+     /* Precedence declarations go here. */
+-    
+-    
++
++
+     %%
+     /* 
+     Save the root of the abstract syntax tree in a global variable.
+     */
++
+     program	: class_list	{ @$ = @1; ast_root = program($1); }
+-    ;
+     
+     class_list
+     : class			/* single class */
+@@ -154,21 +163,93 @@
+     | class_list class	/* several classes */
+     { $$ = append_Classes($1,single_Classes($2)); 
+     parse_results = $$; }
+-    ;
+     
+     /* If no parent is specified, the class inherits from the Object class. */
+-    class	: CLASS TYPEID '{' dummy_feature_list '}' ';'
++    class	: CLASS TYPEID '{' feature_list '}' ';'
+     { $$ = class_($2,idtable.add_string("Object"),$4,
+     stringtable.add_string(curr_filename)); }
+-    | CLASS TYPEID INHERITS TYPEID '{' dummy_feature_list '}' ';'
++    | CLASS TYPEID INHERITS TYPEID '{' feature_list '}' ';'
+     { $$ = class_($2,$4,$6,stringtable.add_string(curr_filename)); }
+-    ;
+-    
++
+     /* Feature list may be empty, but no empty features in list. */
+-    dummy_feature_list:		/* empty */
+-    {  $$ = nil_Features(); }
+-    
+-    
++    feature_list:		/* empty */
++    { $$ = nil_Features(); }
++    | feature_list feature ';'
++    { $$ = append_Features($1, single_Features($2));}
++    | feature ';'
++    { $$ = single_Features($1);}
++
++    /* One feature */
++    feature:
++      OBJECTID '(' formal_list ')' ':' TYPEID '{' expression '}'
++    { $$ = method($1, $3, $6, $8); }
++    | OBJECTID ':' TYPEID 
++    { $$ = attr($1, $3, no_expr());}
++    | OBJECTID ':' TYPEID  ASSIGN expression
++    { $$ = attr($1, $3, $5);}
++
++    /* Formal list */
++    formal_list: 		/*empty*/
++    { $$ = nil_Formals(); }
++    | formal formal_list
++
++    /* one formal parameter */ 
++    formal: OBJECTID ':' TYPEID
++
++    expression_list: /*empty <- temporary*/
++    | expression_list ';' expression
++    | expression
++
++    expression_comma_list: /*empty*/
++    | expression_comma_list ',' expression
++    | expression
++
++    /* main theme - expression */
++    expression: OBJECTID ASSIGN expression
++    | BOOL_CONST
++    | INT_CONST
++    { $$ = int_const($1);}
++    | STR_CONST
++    | OBJECTID
++    | '(' expression ')'
++    { $$ = $2; }
++    | expression '=' expression
++    | expression LE expression
++    | expression '<' expression
++    | NOT expression
++    | expression '+' expression
++    { $$ = plus($1, $3); }
++    | expression '-' expression
++    | expression '*' expression
++    | expression '/' expression
++    | ISVOID expression
++    | NEW expression
++    | CASE expression OF case_list
++    | LET let_expression
++    { $$ = $2; }
++    | '{' expression_list '}'
++    | WHILE expression LOOP expression POOL
++    | IF expression THEN expression ELSE expression FI
++    | OBJECTID '(' expression_comma_list ')'
++    | expression '.' TYPEID '(' expression_comma_list')'
++    | expression '@' TYPEID '.' TYPEID '(' expression_comma_list
++
++    let_expression: 
++    | OBJECTID ':' TYPEID IN expression  
++    { $$ = let($1, $3, no_expr(), $5); }
++    | OBJECTID ':' TYPEID ',' let_expression
++    { $$ = let($1, $3, no_expr(), $5); }
++    | OBJECTID ':' TYPEID ASSIGN expression IN expression
++    { $$ = let($1, $3, $5, $7); }
++    | OBJECTID ':' TYPEID ASSIGN expression ',' let_expression
++    { $$ = let($1, $3, $5, $7); }
++
++
++    case_list: /*empty*/
++    | case_list case
++
++    case: OBJECTID ':' TYPEID DARROW expression ';'
++
+     /* end of grammar */
+     %%
+     
+@@ -186,4 +267,4 @@
+       if(omerrs>50) {fprintf(stdout, "More than 50 errors\n"); exit(1);}
+     }
+     
+-    
+\ No newline at end of file
++    

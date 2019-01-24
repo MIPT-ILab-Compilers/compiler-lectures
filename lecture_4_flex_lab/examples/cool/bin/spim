@@ -1,0 +1,6 @@
+#!/bin/sh
+# set environment for spim
+DEFAULT_TRAP_HANDLER=$PWD/bin/trap.handler
+export DEFAULT_TRAP_HANDLER
+
+exec spim -exception_file $DEFAULT_TRAP_HANDLER -file  $*

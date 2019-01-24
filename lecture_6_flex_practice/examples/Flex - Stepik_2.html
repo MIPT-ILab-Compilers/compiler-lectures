@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js gr__stepik_org"><!--<![endif]--><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <link rel="search" type="application/opensearchdescription+xml" href="https://stepik.org/static/opensearch.xml?v2" title="Stepik">
+  <link rel="dns-prefetch" href="https://ajax.googleapis.com/">
+  <link rel="dns-prefetch" href="https://www.google-analytics.com/">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="csrf_cookie_name" content="csrftoken">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="p:domain_verify" content="6e51efa10a4869846bae0b408c5aefcd">
+  <title>Flex - Stepik</title>
+
+  
+  
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://stepik.org/static/classic/ico/favicon_152.png?v=1509402377">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://stepik.org/static/classic/ico/favicon_144.png?v=1509402377">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://stepik.org/static/classic/ico/favicon_120.png?v=1509402377">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://stepik.org/static/classic/ico/favicon_72.png?v=1509402377">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="https://stepik.org/static/classic/ico/favicon_57.png?v=1509402377">
+    <link rel="apple-touch-startup-image" href="https://stepik.org/static/classic/ico/startup-splash.png?v=1509402377">
+    <link rel="icon" type="image/png" href="https://stepik.org/static/classic/ico/favicon_16.png?v=1509402377" sizes="16x16">
+    <link rel="icon" type="image/png" href="https://stepik.org/static/classic/ico/favicon_32.png?v=1509402377" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://stepik.org/static/classic/ico/favicon_57.png?v=1509402377" sizes="57x57">
+    <link rel="icon" type="image/png" href="https://stepik.org/static/classic/ico/favicon_72.png?v=1509402377" sizes="72x72">
+    
+    <link rel="icon" type="image/png" href="https://stepik.org/static/classic/ico/favicon_96.png?v=1509402377" sizes="96x96">
+    <link rel="icon" type="image/png" href="https://stepik.org/static/classic/ico/favicon_120.png?v=1509402377" sizes="120x120">
+    
+    <link rel="icon" type="image/png" href="https://stepik.org/static/classic/ico/favicon_128.png?v=1509402377" sizes="128x128">
+    
+    <link rel="icon" type="image/png" href="https://stepik.org/static/classic/ico/favicon_144.png?v=1509402377" sizes="144x144">
+    <link rel="icon" type="image/png" href="https://stepik.org/static/classic/ico/favicon_152.png?v=1509402377" sizes="152x152">
+    
+    <link rel="icon" type="image/png" href="https://stepik.org/static/classic/ico/favicon_195.png?v=1509402377" sizes="195x195">
+    
+    <link rel="icon" type="image/png" href="https://stepik.org/static/classic/ico/favicon_228.png?v=1509402377" sizes="228x228">
+    
+    <meta name="msapplication-TileColor" content="#66cc66">
+    <meta name="msapplication-TileImage" content="/static/classic/ico/favicon_144.png?v=1509402377">
+  
+  <link rel="shortcut icon" href="https://stepik.org/static/classic/ico/favicon.ico">
+  <link rel="icon" sizes="16x16 24x24 32x32 48x48 64x64" href="https://stepik.org/static/classic/ico/favicon.ico">
+  <link rel="canonical" href="https://stepik.org/lesson/58157/step/2?unit=35850">
+
+  
+    
+  
+
+  <meta property="og:site_name" content="Stepik: online education">
+  <meta property="og:url" content="https://stepik.org/lesson/58157/step/2?unit=35850">
+  <meta name="twitter:site" content="@stepikorg">
+  <meta name="fb:app_id" content="171127739724012">
+  <meta name="fb:admins" content="764047960">
+
+  
+
+<meta name="stepic/config/environment" content="%7B%22TRACK_USER_ORDER%22%3A10%2C%22IS_SEND_ANALYTICS%22%3Atrue%2C%22YA_COUNTER_GLOBAL_NAME%22%3A%22yaCounter30810146%22%2C%22GA_GLOBAL_NAME%22%3A%22ga%22%2C%22BUILD_TIMESTAMP%22%3A%2230.9.1509384154030%22%2C%22CLIENT_ALLOWED_TIME_DELTA%22%3A900%2C%22modulePrefix%22%3A%22stepic%22%2C%22environment%22%3A%22production%22%2C%22STATS%22%3A%7B%22IS_ENABLED%22%3Atrue%2C%22SEND_INTERVAL%22%3A20000%2C%22QUEUE_LEN_WARNING%22%3A1000%2C%22GAVEUP_INTERVAL%22%3A3600000%7D%2C%22SOCKET%22%3A%7B%22IS_ENABLED%22%3Atrue%2C%22RECONNECT_INTERVAL%22%3A20000%2C%22MAX_INTERVAL%22%3A300000%2C%22HEARTBEAT%22%3A40000%7D%2C%22STATIC_URL%22%3A%22static/%22%2C%22rootURL%22%3A%22/%22%2C%22locationType%22%3A%22fullscreen-history%22%2C%22contentSecurityPolicy%22%3A%7B%22font-src%22%3A%22%27self%27%20data%3A%20fonts.gstatic.com%22%2C%22connect-src%22%3A%22%27self%27%22%2C%22style-src%22%3A%22%27self%27%20%27unsafe-inline%27%20fonts.googleapis.com%22%2C%22img-src%22%3A%22%27self%27%20play.google.com%20images.unsplash.com%20ucarecdn.com%22%7D%2C%22stripe_lib_url%22%3A%22https%3A//checkout.stripe.com/checkout.js%22%2C%22firebase_lib_url%22%3A%22https%3A//www.gstatic.com/firebasejs/4.5.0/firebase.js%22%2C%22moment%22%3A%7B%22includeLocales%22%3A%5B%22en%22%2C%22ru%22%2C%22uk%22%2C%22es%22%2C%22zh-hans%22%2C%22de%22%5D%7D%2C%22EmberENV%22%3A%7B%22FEATURES%22%3A%7B%7D%2C%22_ENABLE_LEGACY_VIEW_SUPPORT%22%3Atrue%7D%2C%22APP%22%3A%7B%22PLATFORM_NEWS_FETCH_DELAY%22%3A5000%2C%22LOG_RESOLVER%22%3Afalse%2C%22LOG_ACTIVE_GENERATION%22%3Afalse%2C%22LOG_TRANSITIONS%22%3Afalse%2C%22LOG_TRANSITIONS_INTERNAL%22%3Afalse%2C%22LOG_VIEW_LOOKUPS%22%3Afalse%2C%22name%22%3A%22stepic%22%2C%22version%22%3A%220.0.0+9efa8bea%22%7D%2C%22ember-cli-mirage%22%3A%7B%22usingProxy%22%3Afalse%2C%22useDefaultPassthroughs%22%3Atrue%7D%2C%22exportApplicationGlobal%22%3Afalse%2C%22resizeServiceDefaults%22%3A%7B%22widthSensitive%22%3Atrue%2C%22heightSensitive%22%3Atrue%2C%22debounceTimeout%22%3A200%2C%22injectionFactories%22%3A%5B%22view%22%2C%22component%22%5D%7D%7D">
+
+
+
+  <meta name="fragment" content="!">
+
+
+
+
+<meta name="google-play-app" content="app-id=org.stepic.droid">
+<meta name="apple-itunes-app" content="app-id=1064581926" app-argument="https://stepik.org/lesson/58157/step/2?unit=35850">
+
+
+
+<meta name="description" content="Flex">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Flex">
+<meta property="og:description" content="Flex">
+<link rel="alternate" type="application/json+oembed" href="https://stepik.org/oembed/?url=https://stepik.org/lesson/58157/step/2?unit=35850&amp;format=json" title="Flex">
+<link rel="alternate" type="application/xml+oembed" href="https://stepik.org/oembed/?url=https://stepik.org/lesson/58157/step/2?unit=35850&amp;format=xml" title="Flex">
+
+<meta property="og:image" content="https://ucarecdn.com/4c9b9cd5-cf10-40bc-a4c2-3f79662537fa/-/scale_crop/180x180/center/">
+<link rel="image_src" href="Flex%20-%20Stepik_2_files/a.png">
+
+
+
+
+<script type="text/javascript" async="" src="Flex%20-%20Stepik_2_files/linkid.js"></script><script type="text/javascript" async="" src="Flex%20-%20Stepik_2_files/watch.js"></script><script async="" src="Flex%20-%20Stepik_2_files/analytics.js"></script><script type="text/javascript">
+  var STEPIC_LOAD_LEFTOVERS = function(){
+    // GA
+    
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-41633741-1', 'stepik.org');
+ga('require', 'linkid', 'linkid.js');
+ga('require', 'displayfeatures');
+ga('send', 'pageview');
+
+(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter30810146 = new Ya.Metrika({ id:30810146, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");
+
+    
+  };
+</script>
+
+<link rel="preload" as="script" href="Flex%20-%20Stepik_2_files/vendor.js">
+<link rel="preload" as="script" href="Flex%20-%20Stepik_2_files/stepic.js">
+<link rel="preload" as="image" href="Flex%20-%20Stepik_2_files/topbar_logo.svg">
+<link rel="preload" as="image" href="Flex%20-%20Stepik_2_files/avatar.png">
+
+
+<link href="Flex%20-%20Stepik_2_files/css.css" rel="stylesheet" type="text/css">
+
+
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  
+<script type="text/javascript">
+  window.STEPIC_MAIN_CSS_URL = "https://stepik.azureedge.net/static/frontend/cli-build/stepic.css?v=1509384730";
+</script>
+<link rel="stylesheet" href="Flex%20-%20Stepik_2_files/vendor.css">
+<link rel="stylesheet" href="Flex%20-%20Stepik_2_files/stepic.css">
+
+<style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 5px 0px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -khtml-border-radius: 5px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 1px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: .7em}
+.MathJax_MenuRadioCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuLabel {padding: 1px 2em 3px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #DDDDDD; margin: 4px 3px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: #606872; color: white}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1px; bottom: 2px; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style><style></style></head>
+<body data-gr-c-s-loaded="true" class="ember-application wysihtml5-supported"><div id="MathJax_Message" style="display: none;"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script>
+    // try to detect embedding when needed
+    if (!window.STEPIC_IS_EMBEDDED) {
+      try {
+        window.STEPIC_IS_EMBEDDED = window.self !== window.top;
+      } catch (e) {
+        // old IE and FF fails with "same origin" errors
+        window.STEPIC_IS_EMBEDDED = true;
+      }
+    }
+    window.STEPIC_BUILD_VERSION = 1509384730;
+    window.STEPIC_BUILD_TAG = '108.1.5569';
+    window.__stepik_shoebox__ = JSON.parse('{\u0022stepics\u0022: [{\u0022total_submissions\u0022: 34472203, \u0022total_active\u0022: 68935, \u0022config\u0022: {\u0022course_reviews_passed_percent\u0022: 80, \u0022favicon\u0022: \u0022/static/classic/ico/favicon.ico\u0022, \u0022telegram_bot_name\u0022: \u0022StepicBot\u0022, \u0022is_standard_explore\u0022: true, \u0022has_email_verification_alert\u0022: true, \u0022is_standard_index\u0022: true, \u0022has_registration_link\u0022: true, \u0022has_social_sharing\u0022: true, \u0022payments_yandex_money_shop_id\u0022: \u002274729\u0022, \u0022stripe_api_public_key\u0022: \u0022pk_live_vTMgNYTvMxpmKA0pN0ZQYoHT\u0022, \u0022has_extra_favicons\u0022: true, \u0022project_help_center_url\u0022: \u0022http://support.stepik.org\u0022, \u0022has_language_selector\u0022: true, \u0022has_mobile_apps_banner\u0022: true, \u0022project_main_instance_url\u0022: \u0022https://stepik.org/\u0022, \u0022topbar_logo\u0022: \u0022/static/frontend/topbar_logo.svg\u0022, \u0022is_public_social_accounts\u0022: true, \u0022has_course_review_tab\u0022: true, \u0022is_full_profile\u0022: true, \u0022index_text\u0022: \u0022\u0022, \u0022email_verify_warn_delay\u0022: 259200, \u0022has_lessons_in_navbar\u0022: true, \u0022is_standard_footer\u0022: true, \u0022language\u0022: null, \u0022has_activity_graph\u0022: true, \u0022payments_yandex_money_form_action\u0022: \u0022https://money.yandex.ru/eshop.xml\u0022, \u0022can_set_password\u0022: true, \u0022index_logo\u0022: \u0022\u0022, \u0022courses_default_publicity\u0022: true, \u0022login_link\u0022: \u0022/login/\u0022, \u0022can_change_language\u0022: true, \u0022enable_recommended_courses_for_users\u0022: [\u0022135091\u0022, \u002243329\u0022, \u002215557637\u0022], \u0022project_name\u0022: \u0022Stepik\u0022, \u0022payments_yandex_money_scid\u0022: \u002275883\u0022, \u0022project_domain\u0022: \u0022stepik.org\u0022, \u0022can_change_city\u0022: true, \u0022firebase_web_api_config\u0022: {\u0022databaseURL\u0022: \u0022https://stepic\u002Dbc291.firebaseio.com\u0022, \u0022projectId\u0022: \u0022stepic\u002Dbc291\u0022, \u0022messagingSenderId\u0022: \u0022808829787351\u0022, \u0022apiKey\u0022: \u0022AIzaSyBHRAfhbe3nbZuqsLk\u002DEamfhxsi8MTgnLQ\u0022, \u0022authDomain\u0022: \u0022stepic\u002Dbc291.firebaseapp.com\u0022, \u0022storageBucket\u0022: \u0022stepic\u002Dbc291.appspot.com\u0022}, \u0022footer_logo\u0022: \u0022\u0022, \u0022can_change_name\u0022: true, \u0022can_change_email\u0022: true, \u0022project_support_email\u0022: \u0022support@stepik.org\u0022, \u0022is_public_telegram_bot\u0022: true}, \u0022user\u0022: 134335, \u0022total_quizzes\u0022: 105776, \u0022server_time\u0022: 1509477276.855446, \u0022profile\u0022: 134335, \u0022id\u0022: 1}], \u0022users\u0022: [{\u0022id\u0022: 134335, \u0022profile\u0022: 134335, \u0022is_private\u0022: false, \u0022is_active\u0022: true, \u0022is_guest\u0022: false, \u0022is_organization\u0022: false, \u0022short_bio\u0022: \u0022\u005Cu041c\u005Cu0430\u005Cu0438 2010, \u005Cu041f\u005Cu0440\u005Cu0438\u005Cu043a\u005Cu043b\u005Cu0430\u005Cu0434\u005Cu043d\u005Cu0430\u005Cu044f \u005Cu041c\u005Cu0430\u005Cu0442\u005Cu0435\u005Cu043c\u005Cu0430\u005Cu0442\u005Cu0438\u005Cu043a\u005Cu0430. \u005Cu0420\u005Cu0422\u005Cu0418 \u005Cu0438\u005Cu043c. \u005Cu041c\u005Cu0438\u005Cu043d\u005Cu0446\u005Cu0430, Soft Machines \u0022, \u0022details\u0022: \u0022\u0022, \u0022first_name\u0022: \u0022Igor\u0022, \u0022last_name\u0022: \u0022Gorban\u0022, \u0022full_name\u0022: \u0022Igor Gorban\u0022, \u0022alias\u0022: null, \u0022avatar\u0022: \u0022https://stepik.org/media/users/134335/avatar.png?1507654671\u0022, \u0022cover\u0022: null, \u0022city\u0022: null, \u0022level\u0022: 65, \u0022level_title\u0022: \u0022scholar\u0022, \u0022tag_progresses\u0022: [], \u0022knowledge\u0022: 1790, \u0022knowledge_rank\u0022: 1815, \u0022reputation\u0022: 92, \u0022reputation_rank\u0022: 522, \u0022join_date\u0022: \u00222014\u002D08\u002D10T19:26:10Z\u0022, \u0022social_profiles\u0022: [4905], \u0022solved_steps_count\u0022: 791, \u0022created_courses_count\u0022: 0, \u0022created_lessons_count\u0022: 15, \u0022issued_certificates_count\u0022: 0}], \u0022profiles\u0022: [{\u0022id\u0022: 134335, \u0022first_name\u0022: \u0022Igor\u0022, \u0022last_name\u0022: \u0022Gorban\u0022, \u0022full_name\u0022: \u0022Igor Gorban\u0022, \u0022is_private\u0022: false, \u0022avatar\u0022: \u0022https://stepik.org/media/users/134335/avatar.png?1507654671\u0022, \u0022language\u0022: \u0022ru\u0022, \u0022city\u0022: null, \u0022short_bio\u0022: \u0022\u005Cu041c\u005Cu0430\u005Cu0438 2010, \u005Cu041f\u005Cu0440\u005Cu0438\u005Cu043a\u005Cu043b\u005Cu0430\u005Cu0434\u005Cu043d\u005Cu0430\u005Cu044f \u005Cu041c\u005Cu0430\u005Cu0442\u005Cu0435\u005Cu043c\u005Cu0430\u005Cu0442\u005Cu0438\u005Cu043a\u005Cu0430. \u005Cu0420\u005Cu0422\u005Cu0418 \u005Cu0438\u005Cu043c. \u005Cu041c\u005Cu0438\u005Cu043d\u005Cu0446\u005Cu0430, Soft Machines \u0022, \u0022details\u0022: \u0022\u0022, \u0022subscribed_for_mail\u0022: true, \u0022notification_email_delay\u0022: \u00221h\u0022, \u0022notification_status\u0022: 134335, \u0022is_staff\u0022: false, \u0022is_guest\u0022: false, \u0022can_add_lesson\u0022: true, \u0022can_add_course\u0022: true, \u0022can_add_group\u0022: false, \u0022subscribed_for_news_en\u0022: true, \u0022subscribed_for_news_ru\u0022: true, \u0022bit_field\u0022: 1, \u0022level\u0022: 65, \u0022level_title\u0022: \u0022scholar\u0022, \u0022level_abilities\u0022: [\u0022add_prime_lesson\u0022], \u0022has_password\u0022: true, \u0022social_accounts\u0022: [31377, 43771], \u0022email_addresses\u0022: [17771], \u0022is_email_verified\u0022: true, \u0022invite_url\u0022: \u0022https://stepik.org/friends/X7XJjDlm\u0022, \u0022telegram_bot_url\u0022: \u0022https://telegram.me/StepicBot?start\u003DTVRNME16TTE6MWU5YnpnOms4Wnl3YzdkbDc2dnBYUkJ6TEtZQTFQWFJncw\u0022, \u0022subscription_plan\u0022: null, \u0022experiment_choices\u0022: {\u0022feedback_type\u0022: \u0022feedback_type.interactive\u0022}, \u0022allowed_private_courses_count\u0022: 0, \u0022is_web_push_enabled\u0022: true}]}');
+  </script>
+  <script defer="defer" src="Flex%20-%20Stepik_2_files/vendor.js"></script>
+  <script defer="defer" src="Flex%20-%20Stepik_2_files/stepic.js"></script>
+  <script>
+    var STEPIC_APP_LOADED = null;
+    UPLOADCARE_LOCALE = "en";
+    UPLOADCARE_LIVE = false;
+    UPLOADCARE_TABS = "file url dropbox facebook vk gdrive box skydrive instagram evernote";
+    UPLOADCARE_AUTOSTORE = true;
+    UPLOADCARE_PUBLIC_KEY = "e7a075ad8dc9e3a1ec61";
+    UPLOADCARE_CDN_BASE = 'https://ucarecdn.com/';
+    UPLOADCARE_MANUAL_START = true;
+    var STEPIC_SENTRY_DSN = 'https://847d1d9c4c25464db135715240b411e9@sentry.stepik.org/8';
+    var STEPIC_LOADED_CALLBACK = function(){};
+  </script>
+  <script defer="defer" src="Flex%20-%20Stepik_2_files/MathJax.js"></script>
+  <script defer="defer" type="text/x-mathjax-config;executed=true">
+        MathJax.Hub.Config({
+          tex2jax: {inlineMath: [['$','$']], preview: "none"},
+          TeX: {extensions: ["mhchem.js", "color.js"]},
+          messageStyle: "none",
+        });
+  </script>
+
+
+
+<div id="ember1253" class="ember-view"><div id="ember1285" data-outward="true" class="ember-view stepic-application">
+  <div id="ember1302" class="ember-view loading-slider"></div>
+
+  <div class=" stepic-application__inner">
+    <div class="woof-yard no-print">
+        <!---->
+        <!---->
+        <!---->
+        <!---->
+    </div>
+    <div class="row">
+      <!---->
+    </div>
+
+        <div class="navbar__wrapper no-print ">
+    <nav class="navbar" aria-label="Общая навигация по сайту">
+      <div class="navbar__head ">
+<a id="ember1324" href="https://stepik.org/users/134335/learn" class="topbar__logo-link   ember-view ember-link"><img class="navbar__logo" alt="Stepik logo" src="Flex%20-%20Stepik_2_files/topbar_logo.svg" title="">
+</a>
+<!---->          <div class="navbar__links-fixed">
+              <li class="navbar__menu-item">
+<a id="ember1355" href="https://stepik.org/catalog" class="navbar__link st-link   ember-view ember-link">                  Каталог
+</a>              </li>
+              <li class="navbar__menu-item">
+<a id="ember1380" href="https://stepik.org/users/134335/learn" class="navbar__link st-link   ember-view ember-link">                  Мои курсы
+</a>              </li>
+          </div>
+        <a role="button" class="navbar__toggle st-link st-link_style_button" data-ember-action="1381"></a>
+      </div>
+      <div class="navbar__links ">
+        <ul class="navbar__menu">
+<!---->            <li class="navbar__menu-item">
+              <li class="navbar__menu-item">
+<div id="ember1390" class="ember-view"><div id="ember1399" role="button" data-menu-toggler="true" aria-haspopup="true" class="navbar__submenu-toggler ember-view button st-button_style_none">      Создать
+      <span id="ember1408" class="navbar__down-arrow ember-view svg-icon down_arrow_icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" viewBox="-0.475 -0.477 24 16"><path fill="none" stroke="currentcolor" stroke-width="4" stroke-miterlimit="10" d="M1.525 1.523l10 10 10-10"></path></svg></span>
+
+</div><div id="ember1417" class="navbar__create-menu ember-view"><!----></div>
+</div></li>
+
+            </li>
+        </ul>
+          <form class="navbar__search-form" data-ember-action="1426">
+            <div id="ember1443" class="ember-view"><div id="ember1452" class="st-input-wrapper_unfocused  ember-view type-ahead navbar__search-wrapper st-input-wrapper st-input-wrapper_border-none st-input-wrapper_type-search"><span class="twitter-typeahead" style="position: relative; display: inline-block; direction: ltr;"><input class="navbar__search-input st-input st-input_border_none ember-view ember-text-field tt-hint" style="position: absolute; top: 0px; left: 0px; border-color: transparent; box-shadow: none; opacity: 1; background: rgba(0, 0, 0, 0) none repeat scroll 0px 0px;" readonly="readonly" autocomplete="off" spellcheck="false" tabindex="-1" type="search"><input id="ember1465" class="navbar__search-input st-input st-input_border_none ember-view ember-text-field tt-input" autocomplete="off" spellcheck="false" style="position: relative; vertical-align: top; background-color: transparent;" dir="auto" placeholder="Поиск по курсу…" aria-label="Поиск по курсу…" type="search"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: Roboto,sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: optimizelegibility; text-transform: none;"></pre><span class="tt-dropdown-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none; right: auto;"><div class="tt-dataset-typeahead"></div></span></span>
+</div></div>
+          </form>
+          <div id="ember1474" class="navbar__submenu-toggler ember-view language-selector"><div id="ember1475" class="ember-view"><div id="ember1476" role="button" data-menu-toggler="true" aria-haspopup="true" class="navbar__submenu-toggler ember-view button st-button_style_none">    Русский
+    <span id="ember1477" class="navbar__down-arrow ember-view svg-icon down_arrow_icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" viewBox="-0.475 -0.477 24 16"><path fill="none" stroke="currentcolor" stroke-width="4" stroke-miterlimit="10" d="M1.525 1.523l10 10 10-10"></path></svg></span>
+
+</div>
+<div id="ember1478" class="ember-view"><!----></div>
+</div></div>
+        <div class="navbar__divider"></div>
+<div id="ember1479" class="navbar__profile-wrp ember-view"><div id="ember1480" role="button" data-menu-toggler="true" aria-haspopup="true" class="navbar__profile navbar__submenu-toggler ember-view button st-button_style_none">                <img class="navbar__profile-img" src="Flex%20-%20Stepik_2_files/avatar.png" width="40" height="40">
+<!---->                <span class="navbar__firstname">
+                  Igor
+                </span>
+                  <span class="navbar__profile-counter">1</span>
+                <span id="ember1481" class="navbar__down-arrow ember-view svg-icon down_arrow_icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" viewBox="-0.475 -0.477 24 16"><path fill="none" stroke="currentcolor" stroke-width="4" stroke-miterlimit="10" d="M1.525 1.523l10 10 10-10"></path></svg></span>
+
+</div>
+<div id="ember1482" class="ember-view"><!----></div>
+</div>      </div>
+    </nav>
+  </div>
+
+<!---->
+
+    <main>
+      <div id="ember3295" class="ember-view lesson-wrapper in-course scrolled">
+    <div class="lesson ">
+      <div class="adjust-scaling-tool">a</div>
+
+      <div id="ember3296" style="margin-right: 0px;" class="page-fragment no-print ember-view lesson-header lesson-header_mode_course"><div class="lesson-header__main-row">
+  <div class="lesson-header__main-info">
+    <div class="lesson-header__cover">
+      <img class="lesson-header__cover-img" alt="Картинка урока" src="Flex%20-%20Stepik_2_files/a.png">
+    </div>
+
+    <a target="_blank" class="lesson-header__logo" href="https://stepik.org/lesson/58157/step/2?unit=35850" title="Stepik">
+      <span id="ember3297" class="ember-view svg-icon logo_icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60"><path fill="#6C6" d="M54.1 15.8l-9.9-9.9C40.4 2.1 35.4 0 30 0S19.6 2.1 15.8 5.9l-9.9 9.9C2.1 19.6 0 24.6 0 30s2.1 10.4 5.9 14.2l9.9 9.9C19.6 57.9 24.6 60 30 60c5.2 0 10.2-2 14-5.6l10.1-10.1C57.9 40.4 60 35.4 60 30s-2.1-10.4-5.9-14.2z"></path><path fill="currentColor" d="M37.1 47.1C35.3 48.9 32.8 50 30 50s-5.4-1.2-7.3-3l4.8-4.8c.6.6 1.5 1 2.5 1s1.8-.4 2.5-1l9.7-9.7c.6-.6 1-1.5 1-2.5s-.4-1.8-1-2.5c-.6-.6-1.5-1-2.5-1s-1.8.4-2.5 1l-9.7 9.7c-1.9 1.9-4.4 3-7.3 3s-5.4-1.2-7.3-3c-1.9-1.9-3-4.4-3-7.3s1.2-5.4 3-7.3l9.7-9.7c1.9-1.9 4.4-3 7.3-3s5.4 1.2 7.3 3l-4.8 4.8c-.6-.6-1.5-1-2.5-1s-1.8.4-2.5 1l-9.7 9.7c-.6.6-1 1.5-1 2.5s.4 1.8 1 2.5c.6.6 1.5 1 2.5 1s1.8-.4 2.5-1l9.7-9.7c1.9-1.9 4.4-3 7.3-3s5.4 1.2 7.3 3c1.9 1.9 3 4.4 3 7.3 0 2.8-1.2 5.4-3 7.3l-9.9 9.8z"></path></svg></span>
+    </a>
+
+    <div class="lesson-header__main-info-text">
+      <h1 class="lesson-header__title">
+        2.2 Flex
+      </h1>
+
+      <div class="lesson-header__progress">
+
+        <div class="lesson-header__authors lesson-header__authors_mode_zen">
+          Автор:
+<a id="ember3298" href="https://stepik.org/users/134335" class="lesson-header__owner-link ember-view ember-link">              Igor Gorban</a>        </div>
+        <div class="lesson-header__progress-line">
+          <progress class="lesson-header__progress-bar" max="0" value="0"></progress>
+          0 / 0
+        </div>
+        <div class="progress-circle">
+<!---->        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="lesson-header__buttons">
+
+<a id="ember3299" href="https://stepik.org/edit-lesson/58157/step/2" title="Редактировать" class="ember-view ember-link button button_style_secondary lesson-header__button">            <span id="ember3300" class="lesson-header__button-icon ember-view svg-icon pencil_icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28"><path fill="currentcolor" d="M0 28l8-3-5-5zM21.985 10.966l-12.02 12.02-5.021-5.02 12.02-12.02zM19 4l4-4h3l2 2v3l-4 4z"></path></svg></span>
+</a>
+      <button class=" lesson-header__button button_style_secondary lesson-header__button-fullscreen" title="Полноэкранный режим" data-ember-action="3301">
+          <span id="ember3302" class="lesson-header__button-icon ember-view svg-icon fullscreen_icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28"><path d="M26 18v8h-8m-8 0H2v-8m0-8V2h8m8 0h8v8" fill="none" stroke="currentcolor" stroke-width="4" stroke-miterlimit="10"></path></svg></span>
+      </button>
+
+    <button class="lesson-header__button button_style_secondary" title="поделиться" data-ember-action="3303">
+        <span id="ember3304" class="lesson-header__button-icon ember-view svg-icon share2_icon"><svg viewBox="-1 0 17 18" xmlns="http://www.w3.org/2000/svg"><path d="M13 12c-.687 0-1.318.234-1.824.622l-5.22-3.131C5.984 9.331 6 9.167 6 9c0-.168-.017-.33-.043-.491l5.219-3.132A2.98 2.98 0 0 0 13 6a3 3 0 1 0-3-3c0 .167.017.33.044.491l-5.22 3.131A2.983 2.983 0 0 0 3 6a3 3 0 0 0 0 6 2.98 2.98 0 0 0 1.825-.623l5.219 3.132A2.99 2.99 0 0 0 10 15a3 3 0 1 0 3-3z" fill="currentColor" fill-rule="evenodd"></path></svg></span>
+    </button>
+
+      <div class="lesson-header__menu">
+<div id="ember3305" class="lesson-header__menu-popup  ember-view"><div id="ember3306" role="button" data-menu-toggler="true" aria-haspopup="true" class="button_style_secondary lesson-header__button  lesson-header__button-text ember-view button">                Настройки
+                <span id="ember3307" class="ember-view svg-icon down-arrow_icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" viewBox="-0.475 -0.477 24 16"><path fill="none" stroke="currentcolor" stroke-width="4" stroke-miterlimit="10" d="M1.525 1.523l10 10 10-10"></path></svg></span>
+
+</div>
+<div id="ember3308" class="ember-view"><!----></div>
+</div>      </div>
+
+
+      <button data-toc-toggler="true" aria-label="Показать список уроков курса" class="button_style_secondary lesson-header__button lesson-header__button-toc " data-ember-action="3309">
+          <span id="ember3310" class="lesson-header__button-icon ember-view svg-icon doublearrow-left_icon"><svg viewBox="0 0 14 12" xmlns="http://www.w3.org/2000/svg"><g fill="currentColor"><path d="M13.264 1.415L8.772 6l4.492 4.585L11.878 12 6 6l5.878-6z"></path><path d="M7.264 1.415L2.772 6l4.492 4.585L5.878 12 0 6l5.878-6z"></path></g></svg></span>
+      </button>
+
+
+  </div>
+</div>
+
+<div class="lesson-header__second-row">
+  <div class="lesson-header__authors">
+<a id="ember3311" href="https://stepik.org/users/134335" class="lesson-header__owner-link ember-view ember-link">      Igor Gorban</a>, из курса
+<a id="ember3312" href="https://stepik.org/course/3857" class="lesson-header__course-link ember-view ember-link">        Основы теории компиляторов.
+</a>—
+<a id="ember3313" href="https://stepik.org/course/3857/syllabus?module=2" class="lesson-header__course-link ember-view ember-link">        2 Лексический анализатор.
+</a>  </div>
+
+  <div class="lesson-header__stats">
+<!---->
+      <span class="lesson-header__stat" title="Количество просмотров">
+        <span id="ember3314" aria-label="Количество просмотров" title="Количество просмотров" class="lesson-header__stat-icon ember-view svg-icon eye_icon"><svg viewBox="0 0 16 12" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4.25a2 2 0 0 1-2 2 2 2 0 1 0 2-2zm0-4c-4.102 0-8 4.648-8 6s3.898 6 8 6 8-4.648 8-6-3.898-6-8-6zm0 10a4 4 0 1 1 0-8 4 4 0 0 1 0 8z" clip-rule="evenodd" fill="currentColor"></path></svg></span>
+        3
+      </span>
+
+      <span class="lesson-header__stat" title="Количество человек, прошедших урок">
+        <span id="ember3315" aria-label="Количество человек, прошедших урок" title="Количество человек, прошедших урок" class="lesson-header__stat-icon ember-view svg-icon st-user_icon"><svg viewBox="0 0 38 41" xmlns="http://www.w3.org/2000/svg"><path stroke="null" d="M23.933 28.528c-.146-1.612-.09-2.737-.09-4.21.73-.383 2.038-2.825 2.259-4.888.574-.047 1.479-.607 1.744-2.818.143-1.187-.425-1.855-.771-2.065.934-2.809 2.874-11.499-3.588-12.397C22.822.982 21.119.391 18.906.391c-8.854.163-9.922 6.686-7.981 14.156-.345.21-.913.878-.771 2.065.266 2.211 1.17 2.771 1.744 2.818.22 2.062 1.58 4.505 2.312 4.888 0 1.473.055 2.598-.091 4.21C12.367 33.238.546 31.916 0 41h38c-.545-9.084-12.315-7.762-14.067-12.472z" fill="currentColor"></path></svg></span>
+        1
+      </span>
+  </div>
+</div>
+</div>
+      <h1 class="st-h1 print-only">2.2 Flex</h1>
+      <h2 class="st-h2 print-only">Шаг 2</h2>
+
+      <!----><!----><!----><!---->
+
+      <div class="page-fragment lesson__player 
+        
+        ">
+          <nav class="lesson__step-pins" data-step-pins="true" aria-label="Навигация по уроку" style="transform: translateX(-0px)">
+                <div id="ember3316" data-step-position="1" class="ember-view step-pin step step-pin-component step-preview_for_step1 passed"><a id="ember3317" href="https://stepik.org/lesson/58157/step/1?unit=35850" class="step-link step-pin passed     ember-view ember-link ember-transitioning-in">      <!----><!----><!---->
+<!---->        <div class="step-preview__popup" aria-hidden="true">
+<!---->  </div>
+
+</a>  <div class="step-pin__bottom-border"> </div>
+</div>
+                <div id="ember3318" data-step-position="2" class="ember-view step-pin step step-pin-component step-preview_for_step2 passed"><a id="ember3319" href="https://stepik.org/lesson/58157/step/2?unit=35850" class="step-link step-pin passed   active  ember-view ember-link active">      <!----><!----><!---->
+<!---->        <div class="step-preview__popup" aria-hidden="true">
+<!---->  </div>
+
+</a>  <div class="step-pin__bottom-border"> </div>
+</div>
+                <div id="ember3320" data-step-position="3" class="ember-view step-pin step step-pin-component step-preview_for_step3 passed"><a id="ember3321" href="https://stepik.org/lesson/58157/step/3?unit=35850" class="step-link step-pin passed     ember-view ember-link ember-transitioning-in">      <!----><!----><!---->
+<!---->        <div class="step-preview__popup" aria-hidden="true">
+<!---->  </div>
+
+</a>  <div class="step-pin__bottom-border"> </div>
+</div>
+                <div id="ember3322" data-step-position="4" class="ember-view step-pin step step-pin-component step-preview_for_step4 passed"><a id="ember3323" href="https://stepik.org/lesson/58157/step/4?unit=35850" class="step-link step-pin passed     ember-view ember-link ember-transitioning-in">      <!----><!----><!---->
+<!---->        <div class="step-preview__popup" aria-hidden="true">
+<!---->  </div>
+
+</a>  <div class="step-pin__bottom-border"> </div>
+</div>
+          </nav>
+
+        <div class="player-content-wrapper">
+              <article id="ember3452" class="ember-view step-show"><div class="step-dynamic-container">
+      <div id="ember3453" class="ember-view step-view step-view_material"><!----><div class="step-wrapper">
+  <div class="step-inner">
+      <div id="ember3454" class="ember-view step-text-wrapper">Программа, написанная на языке flex, имеет следующий формат:<p></p><pre><pre><code class="hljs gcode">определения
+<span class="hljs-meta">%</span><span class="hljs-meta">%</span>
+правила
+<span class="hljs-meta">%</span><span class="hljs-meta">%</span>
+пользовательские_подпрограммы</code></pre>
+</pre>Таким образом, flex-программа включает секции опредeлений 
+(definitions), правил (rules) и пользовательских подпрограмм (user 
+subroutines). Любая из этих секций может быть пустой. <br><p></p><pre><p>Определения, предназначенные для flex, помещаются перед первым %% . Любая строка этой секции, не содержащаяся между { и } , и начинающаяся в первой колонке, является определением flex. Секция определений flex-программы может включать:</p><p></p><ul><li>начальные условия;</li><li>определения;</li><li>фрагменты пользовательских подпрограмм;</li><li>таблицы наборов символов;</li><li>указатели хост-языка;</li><li>изменения размеров внутренних массивов;</li><li>комментарии в формате хост-языка.</li></ul>Начальные условия задаются в форме:<p></p><pre>%START имя1 имя2 ...
+</pre>Если начальные условия определены, то эта строка должна быть первой в flex-программе.<p>Непосредственно определения задаются в форме:</p><p></p><pre>имя трансляция
+</pre>В качестве разделителя используется один или более пробелов или табуляций. Имя (name) - это, как обычно, любая последовательность букв и цифр, начинающаяся с буквы. Трансляция (translation) - это регулярное выражение (или его часть), которое будет подставлено всюду, где указано имя. Пример:<p></p><pre>БУКВА [A-ZА-Яa-zа-я_]
+ЦИФРА [0-9]
+ИДЕНТИФИКАТОР {БУКВА}({БУКВА}|{ЦИФРА})*
+%%
+{ИДЕНТИФИКАТОР} printf("\n%s",yytext);
+. . .
+</pre>flex построит ЛА, который будет находить и выводить все идентификаторы Си-программы из входного файла. В этом примере <i>ИДЕНТИФИКАТОР</i> заменится на  <i>БУКВА (БУКВА | ЦИФРА)</i>, затем на <i>A-ZА-Яa-zа-я(A-ZА-Яa-zа-я | 0-9)</i> .
+<b>yytext</b> - это внешний массив символов программы lex.yy.c, которую строит flex.
+<b>yytext</b> формируется в процессе чтения входного файла и содержит текст, для которого установлено соответствие какому-либо выражению. Этот массив доступен пользовательским разделам flex-программы. Функция printf выводит каждый идентификатор на новой строке.<p>Фрагменты пользовательских подпрограмм вводятся двумя способами:</p><p></p><pre>отступ фрагмент;
+</pre>или<p></p><pre>%{
+фрагмент
+%}
+</pre>Включение пользовательского фрагмента необходимо, например, для ввода макроопределений Си, которые должны начинаться в первой колонке строки. Все строки фрагмента пользовательской подпрограммы, размещенные в разделе определений, будут внешними для любой функции lex.yy.c.<p>Таблица наборов символов задается в виде:</p><p></p><pre>%T
+целое_число строка_символов
+. . .
+целое_число строка_символов
+%T
+</pre>Сгенерированная программа lex.yy.c осуществляет ввод/вывод символов посредством библиотечных функций flex с именами input, output, unput. Таким образом, flex помещает в массив <b>yytext</b> символы в представлении, используемом в этих библиотечных функциях. Для внутреннего использования символ представляется целым числом, значение которого образовано набором битов, представляющих символ в конкретной ЭВМ. Пользователю представляется возможность менять представление символов (целых констант) с помощью таблицы наборов символов. Если таблица символов присутствует в разделе определений, то любой символ, появляющийся либо во входном потоке, либо в правилах, должен быть определен в таблице символов. Символам нельзя назначать число 0 и число, большее числа, выделенного для внутреннего представления символов конкретной ЭВМ. Пример:<p></p><pre>%T
+1 Aa
+2 Bb
+3 Cc
+.
+.
+.
+26 Zz
+27 \n
+28 +
+29 -
+30 0
+31 1
+.
+.
+.
+39 9
+%T
+</pre>Здесь символы верхнего и нижнего регистров переводятся в числа 1 - 26, символ новой строки - в число 27, + и - переводятся в числа 28 и 29, а цифры - в числа 30 - 39.<p>Указатель хост-языка имеет вид:</p><p></p><pre>%C
+</pre>для языка Си. Для других языков программирования, например Фортрана, указатель выглядит соответственно. Если указатель хост-языка отсутствует, то по умолчанию принимается Си.<p>Изменения размеров внутренних массивов задаются в форме:</p><p></p><pre>%x число
+</pre>Число - новый размер массива, x - одна из букв: p - позиции (positions), n - состояния (states), e - узлы дерева разбора (parse tree nodes), a - упакованные переходы (transitions), k - упакованные классы символов (packet character classes), o - массив выходных элементов (output array). flex имеет внутренние таблицы, размеры которых ограничены. При построении программы лексического анализа может произойти переполнение любой из этих таблиц, о чем flex сообщит при построении ЛА. Представляется возможность изменить размеры этих таблиц (сокращая размеры одних и увеличивая размеры других) таким образом, чтобы они не переполнялись. Естественно, эти изменения возможны лишь в пределах той памяти, которая выделяется под процесс. Ниже перечислены размеры таблиц, которые устанавливаются по умолчанию: p - 1500 позиций, n - 300 состояний, e - 600 узлов, a - 1500 упакованных переходов, k - 1000 упакованных классов символов, o - 1500 выходных элементов. Для того чтобы определить, каковы размеры таблиц и насколько они заняты, можно использовать флаг <b>-v</b> при вызове команды flex. Число перед / показывает сколько элементов массива занято, а число за / показывает установленный размер массива.<p>Комментарии в разделе определений задаются в форме хост-языка и должны начинаться не с первой колонки строки.</p><br>
+</pre><br><!----><!---->
+  <div class="step-actions">
+    <button class="button" data-ember-action="3455">
+      Следующий шаг
+    </button>
+  </div>
+</div>
+  </div>
+</div>
+</div>
+</div>
+</article>
+  <!--noindex-->
+    <div class="precache__container">
+      Необходимо не только выделить лексему, но и выполнить некоторые 
+преобразования. Например, если лексема - число, то его необходимо 
+перевести во внутреннюю (двоичную) форму записи как число с плавающей 
+или фиксированной точкой. Если лексема - идентификатор, то его 
+необходимо разместить в таблице для того, чтобы в дальнейшем обращаться к
+ нему не по имени, а по адресу в таблице. Хотя лексический анализ по 
+идее достаточно прост, эта фаза работы компилятора часто занимает больше
+ времени, чем любая другая. &lt;br&gt;Напишите калькулятор!
+    </div>
+  <!--/noindex-->
+
+        </div>
+
+<!---->
+        <span class="share-buttons__wrapper hidden" data-ember-action="3328">
+<!---->        </span>
+
+      </div>
+
+      <div class="lesson__navigation" style="margin-top: 184px;">
+<a id="ember3450" href="https://stepik.org/lesson/58157/step/1?unit=35850" title="Предыдущий шаг" class="ember-view ember-link step-arrow step-arrow_prev">      <span class="step-arrow-image">
+        <span id="ember3451" class="ember-view svg-icon left_arrow_icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="24" viewBox="0 0 16 24"><path fill="none" stroke="currentcolor" stroke-width="4" stroke-miterlimit="10" d="M13.1 21.9l-10-10 10-10"></path></svg></span>
+      </span>
+</a>
+<a id="ember3403" href="https://stepik.org/lesson/58157/step/3?unit=35850" title="Следующий шаг" class="ember-view ember-link step-arrow step-arrow_next ember-transitioning-in">      <span class="step-arrow-image">
+        <span id="ember3404" class="ember-view svg-icon right_arrow_icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="24" viewBox="0 0 16 24"><path fill="none" stroke="currentcolor" stroke-width="4" stroke-miterlimit="10" d="M3.1 22l10-10-10-10"></path></svg></span>
+      </span>
+      <span class="step-arrow-text">Следующий шаг</span>
+</a></div>
+
+
+      <div class="lesson-side">
+        <!---->
+      </div>
+
+      <div class="page-fragment lesson__footer no-print">
+        <div class="lesson-likes">
+          <div id="ember3333" class="lesson__likes-widget ember-view vote-widget"><!----><span class="vote-widget__segment vote-widget__segment_type_button vote-widget__segment_type_epic" title="Одобряю!" data-ember-action="3334">
+  <span id="ember3335" class="vote-widget__epic-icon ember-view svg-icon thumbs_up_icon"><svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M2 42h8V18H2v24zm44-22c0-2.21-1.79-4-4-4H29.37l1.91-9.14c.04-.2.07-.41.07-.63 0-.83-.34-1.58-.88-2.12L28.34 2 15.17 15.17C14.45 15.9 14 16.9 14 18v20c0 2.21 1.79 4 4 4h18c1.66 0 3.08-1.01 3.68-2.44l6.03-14.1A4 4 0 0 0 46 24v-3.83l-.02-.02L46 20z"></path></svg></span>
+  0
+</span><span class="vote-widget__segment vote-widget__segment_type_button vote-widget__segment_type_abuse" title="Не оценил." data-ember-action="3336">
+    <span id="ember3337" class="vote-widget__abuse-icon ember-view svg-icon thumbs_up_icon"><svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M2 42h8V18H2v24zm44-22c0-2.21-1.79-4-4-4H29.37l1.91-9.14c.04-.2.07-.41.07-.63 0-.83-.34-1.58-.88-2.12L28.34 2 15.17 15.17C14.45 15.9 14 16.9 14 18v20c0 2.21 1.79 4 4 4h18c1.66 0 3.08-1.01 3.68-2.44l6.03-14.1A4 4 0 0 0 46 24v-3.83l-.02-.02L46 20z"></path></svg></span>
+    0
+  </span></div>
+<!---->        </div>
+
+          <div class="lesson__license-badge" title="Этот урок доступен ограниченному кругу лиц">
+            Приватный <span id="ember3338" class="lesson__license-icon ember-view svg-icon lock_icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"><path d="M15 3c6.6 0 12 5.4 12 12s-5.4 12-12 12S3 21.6 3 15 8.4 3 15 3m0-3C6.7 0 0 6.7 0 15s6.7 15 15 15 15-6.7 15-15S23.3 0 15 0z" fill="currentColor"></path><path d="M19 14v-4c0-2.2-1.8-4-4-4s-4 1.8-4 4v4c-1.1 0-2 .9-2 2v4c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2v-4c0-1.1-.9-2-2-2zm-6 0v-4c0-1.1.9-2 2-2s2 .9 2 2v4h-4z" fill="currentColor"></path></svg></span>
+          </div>
+                <div class="lesson__tags">
+<!---->        </div>
+
+        <div class="lesson__update-date">
+          Последнее обновление:
+          01.11.2017
+        </div>
+      </div>
+    </div>
+
+    <div class="page-fragment lesson__discussions-wrapper">
+        <div id="ember3339" class="ember-view discussions-list"><h2 class="discussions__header" id="discussions">
+      <b>Комментарии</b> <span>| Шаг 2</span>
+  <label class="s-select">
+    <select id="ember3340" optiontargetpath="key" class="ember-view s-select__select"><!---->      <option value="default" selected="selected">
+    Самые популярные
+</option>
+
+      <option value="by_date">
+    Новые обсуждения
+</option>
+
+      <option value="active">
+    Самые обсуждаемые
+</option>
+
+      <option value="recent">
+    Свежие обновления
+</option>
+
+</select>
+    <span class="s-select__arrow"></span>
+  </label>
+</h2>
+
+  <div id="ember3349" class="ember-view comment-input"><!---->  <div id="ember3350" class="ember-view wysi-textarea wysi-textarea_toolbar_bottom-right wysi-textarea_minimal" style="height: 92px;">  <div id="ember3351" class="ember-view wysi-editor"><div class="wysihtml5-form">
+  <textarea class="wysihtml5-textarea step-text-wrapper wysi-textarea__body" id="wysihtml5-textarea-ember3350toolbar" placeholder=" " style="display: none;"></textarea><div class="wysihtml5-textarea step-text-wrapper wysi-textarea__body theory placeholder" spellcheck="true" style="overflow-y: hidden;" contenteditable="true"> </div>
+</div>
+<div id="editor-sandbox" style="display: none;"></div>
+</div>
+  <div id="ember3350toolbar" class="ember-view wysi-toolbar wysihtml5-toolbar wysi-toolbar_hidden"><div class="wysi-toolbar__wrapper">
+  <div class="wysi-toolbar__left">
+    <a data-wysihtml5-command="bold" class="command wysi-toolbar__btn bold-cmd" href="javascript:;" unselectable="on" title="Жирный шрифт (Ctrl + B)">
+      <span id="ember3353" class="ember-view svg-icon wysi_bold_icon"><svg viewBox="-0.5 -0.5 20 20"><g fill="none" stroke="currentColor" stroke-width="4" stroke-miterlimit="10"><path d="M5.5 17.5h8M-.5 3.5h3M16.5 3.5h3M9.5 1.5v16M-.5 1.5h20"></path></g></svg></span>
+    </a>
+    <a data-wysihtml5-command="italic" class="command wysi-toolbar__btn italic-cmd" href="javascript:;" unselectable="on" title="Курсив (Ctrl + I)">
+      <span id="ember3354" class="ember-view svg-icon wysi_italic_icon"><svg viewBox="-0.5 -0.5 20 20"><g fill="none" stroke="currentColor" stroke-width="2" stroke-miterlimit="10"><path d="M17.5 2.5h2M2.5 18.5h6M-.5 2.5h2M9.5.5l-4 18"></path><path stroke-linecap="square" d="M.5.5h18"></path></g></svg></span>
+    </a>
+<!---->    <a data-wysihtml5-command="insertOrderedList" class="command wysi-toolbar__btn ordered-cmd" href="javascript:;" unselectable="on" title="Нумерованный список">
+      <span id="ember3355" class="ember-view svg-icon wysi_ol_icon"><svg viewBox="-0.5 -0.5 20 20"><g fill="none" stroke="currentColor" stroke-width="2" stroke-miterlimit="10"><path d="M9.5 6.5h-2M9.5 18.5h-2M7.5.5h12M7.5 12.5h12M3.5.5v7M4.5.5h-5M3.5 12.5v3M.5 15.5v3M4.5 12.5h-5M4.5 15.5h-5M4.5 18.5h-5"></path></g></svg></span>
+    </a>
+    <a data-wysihtml5-command="createLink" class="command wysi-toolbar__btn link-cmd" href="javascript:;" unselectable="on" title="Вставить ссылку">
+      <span id="ember3356" class="ember-view svg-icon wysi_link_icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path fill="none" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" d="M9 6l4-4C14.4.6 16.6.6 18 2s1.4 3.6 0 5l-4 4c-1.4 1.4-3.6 1.4-5 0"></path><path fill="none" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" d="M11 14l-4 4c-1.4 1.4-3.6 1.4-5 0s-1.4-3.6 0-5l4-4c1.4-1.4 3.6-1.4 5 0"></path></svg></span>
+    </a>
+    <a data-wysihtml5-command="formatCode" class="command wysi-toolbar__btn link-cmd" href="javascript:;" unselectable="on" title="Подсветка кода" data-wysihtml5-command-value="">
+      <span id="ember3357" class="ember-view svg-icon wysi_code_icon"><svg width="20" height="20" viewBox="-3390.5 145.5 20 20"><path fill="none" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" d="M-3370.5 155.5c-1.7 0-3-1.3-3-3v.1-4.1c0-1.1-.9-2-2-2h-2M-3370.5 155.5c-1.7 0-3 1.3-3 3v-.1 4.1c0 1.1-.9 2-2 2h-2M-3390.5 155.5c1.7 0 3 1.3 3 3v-.1 4.1c0 1.1.9 2 2 2h2M-3390.5 155.5c1.7 0 3-1.3 3-3v.1-4.1c0-1.1.9-2 2-2h2"></path></svg></span>
+    </a>
+    <a data-wysihtml5-command="formatLatex" class="command wysi-toolbar__btn link-cmd" href="javascript:;" unselectable="on" title="Формулы">
+      <span id="ember3358" class="ember-view svg-icon wysi_latex_icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="-3292.5 145.5 20 20"><path fill="none" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" d="M-3273.5 164.5h-16l9-9-9-9h16"></path><path fill="currentColor" d="M-3273.5 163.5h-2l1-2h1zM-3273.5 147.5h-2l1 2h1z"></path></svg></span>
+    </a>
+
+<a id="ember3359" title="Добавить изображение" unselectable="on" class="ember-view upload-picker command wysi-toolbar__btn image-cmd">      <span id="ember3360" class="ember-view svg-icon wysi_image_icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path fill="none" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" d="M5 6V1h14v14h-5"></path><path fill="none" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" d="M1 5h14v14H1z"></path><path fill="none" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" d="M15 17l-4-4-2 2-4-4-4 4"></path><circle fill="currentColor" cx="11.5" cy="8.5" r="1.5"></circle></svg></span>
+</a>    <a data-wysihtml5-command="formatCodeLang" href="javascript:;" unselectable="on" width="0" height="0"></a>
+  </div>
+<!----></div>
+<div class="wysihtml5-link-bar">
+  <div data-wysihtml5-dialog="createLink" class="edit-link-bar" style="display: none;">
+    <input class="link-input" data-wysihtml5-dialog-field="href" value="http://">
+    <button data-wysihtml5-dialog-action="save" class="save-cmd">Сохранить</button>
+    <a data-wysihtml5-dialog-action="cancel" class="cancel-cmd">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16">
+        <path stroke="#fff" stroke-width="2" d="M1 1l14 14m0-14L1 15"></path>
+      </svg>
+    </a>
+  </div>
+</div>
+<div class="wysihtml5-link-bar">
+  <div data-wysihtml5-dialog="formatLatex" class="edit-link-bar" style="display: none;">
+    <input class="latex-input" data-wysihtml5-dialog-field="latex">
+    <button data-wysihtml5-dialog-action="save" class="save-cmd">Сохранить</button>
+    <a data-wysihtml5-dialog-action="cancel" class="cancel-cmd">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16">
+        <path stroke="#fff" stroke-width="2" d="M1 1l14 14m0-14L1 15"></path>
+      </svg>
+    </a>
+  </div>
+</div>
+<div class="wysihtml5-link-bar">
+  <div data-wysihtml5-dialog="formatCodeLang" class="edit-link-bar" style="display: none;">
+    <label class="s-select">
+      <select class="s-select__select code-input" data-wysihtml5-dialog-field="class" data-ember-action="3361">
+            <option value="no-highlight" selected="selected">no-highlight</option>
+            <option value="">auto</option>
+            <option value="1c">1c</option>
+            <option value="actionscript">actionscript</option>
+            <option value="apache">apache</option>
+            <option value="applescript">applescript</option>
+            <option value="avrasm">avrasm</option>
+            <option value="axapta">axapta</option>
+            <option value="bash">bash</option>
+            <option value="brainfuck">brainfuck</option>
+            <option value="clojure">clojure</option>
+            <option value="cmake">cmake</option>
+            <option value="coffeescript">coffeescript</option>
+            <option value="cpp">cpp</option>
+            <option value="cs">cs</option>
+            <option value="css">css</option>
+            <option value="d">d</option>
+            <option value="delphi">delphi</option>
+            <option value="diff">diff</option>
+            <option value="django">django</option>
+            <option value="dos">dos</option>
+            <option value="erlang">erlang</option>
+            <option value="erlang-repl">erlang-repl</option>
+            <option value="glsl">glsl</option>
+            <option value="go">go</option>
+            <option value="haskell">haskell</option>
+            <option value="http">http</option>
+            <option value="ini">ini</option>
+            <option value="java">java</option>
+            <option value="javascript">javascript</option>
+            <option value="json">json</option>
+            <option value="kotlin">kotlin</option>
+            <option value="lisp">lisp</option>
+            <option value="lua">lua</option>
+            <option value="markdown">markdown</option>
+            <option value="matlab">matlab</option>
+            <option value="mel">mel</option>
+            <option value="nginx">nginx</option>
+            <option value="objectivec">objectivec</option>
+            <option value="parser3">parser3</option>
+            <option value="perl">perl</option>
+            <option value="php">php</option>
+            <option value="profile">profile</option>
+            <option value="python">python</option>
+            <option value="r">r</option>
+            <option value="rib">rib</option>
+            <option value="rsl">rsl</option>
+            <option value="ruby">ruby</option>
+            <option value="rust">rust</option>
+            <option value="scala">scala</option>
+            <option value="smalltalk">smalltalk</option>
+            <option value="sql">sql</option>
+            <option value="tex">tex</option>
+            <option value="vala">vala</option>
+            <option value="vbscript">vbscript</option>
+            <option value="vhdl">vhdl</option>
+            <option value="xml">xml</option>
+       </select>
+      <span class="s-select__arrow"></span>
+    </label>
+    <button data-wysihtml5-dialog-action="save" class="save-cmd">Сохранить</button>
+    <a data-wysihtml5-dialog-action="cancel" class="cancel-cmd">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16">
+        <path stroke="#fff" stroke-width="2" d="M1 1l14 14m0-14L1 15"></path>
+      </svg>
+    </a>
+  </div>
+</div>
+</div>
+</div>
+  <button disabled="disabled" class="white comment-input__btn " data-ember-action="3362">
+        Оставить комментарий
+  </button>
+</div>
+
+<div class="discussions__list">
+    Нет обсуждений. Начните первое.
+</div>
+</div>
+    </div>
+    <span class="lesson__go-top" data-ember-action="3363">
+      <span id="ember3364" class="ember-view svg-icon up_arrow_icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" viewBox="-0.51 -0.479 24 16"><path fill="none" stroke="currentcolor" stroke-width="4" stroke-miterlimit="10" d="M21.49 12.52l-10-10-10 10"></path></svg></span>
+    </span>
+
+
+</div>
+    </main>
+
+    <!---->
+
+<!---->
+        <div class="page-footer__pre"></div>
+  </div>
+
+    <footer id="ember3365" class="ember-view page-footer page_footer"><div class="page-footer__container">
+  <div class="page-footer__row">
+      <div class="page-footer__col page-footer__terms">
+        <div class="page-footer__years ">
+          © 2013 — 2017. Stepik
+        </div>
+        Наши условия <a href="http://welcome.stepik.org/ru/terms">использования</a> и <a href="http://welcome.stepik.org/ru/privacy">конфиденциальности</a>
+      </div>
+
+      <div class="page-footer__col page-footer__lists">
+        <ul class="page-footer__col  page-footer__list">
+            <li>
+              <a href="http://welcome.stepik.org/ru/pricing">Тарифы</a>
+            </li>
+          <li>
+            <a href="http://welcome.stepik.org/ru/press">Прессе</a>
+          </li>
+          <li>
+            <a href="http://welcome.stepik.org/ru/team">Команда</a>
+          </li>
+        </ul>
+
+        <ul class="page-footer__col page-footer__list">
+          <li>
+              <a href="http://support.stepik.org/ru-RU/support/home">Помощь</a>
+          </li>
+          <li>
+              <a id="ember3366" href="https://stepik.org/lesson/83" class="ember-view ember-link">О нас</a>
+          </li>
+          <li>
+            <a href="http://welcome.stepik.org/ru/contacts">Контакты</a>
+          </li>
+        </ul>
+
+        <ul class="page-footer__col page-footer__counters  page-footer__list">
+          <li title="Общее количество отправленных решений на Stepik">
+            <strong>34&nbsp;472&nbsp;203</strong> решения
+          </li>
+        </ul>
+      </div>
+
+      <div class="page-footer__col page-footer__social-links">
+          <a href="https://facebook.com/rustepik" class="page-footer__social-link">
+            <span id="ember3367" class="ember-view svg-icon footer_fb_icon"><svg viewBox="0 0 32 33" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><rect id="a" width="32" height="32" rx="16"></rect></defs><g fill="none" fill-rule="evenodd"><g transform="translate(0 .5)"><use fill="#FFF" xlink:href="#a"></use><rect stroke="currentColor" x=".5" y=".5" width="31" height="31" rx="15.5"></rect></g><path d="M14.188 25.033v-7.687h-2.721V14.19h2.72v-2.327c0-1.324.37-2.349 1.11-3.075.739-.725 1.725-1.088 2.959-1.088 1.043 0 1.85.04 2.421.122v2.817l-1.66.013c-.616 0-1.031.127-1.244.381-.214.254-.32.635-.32 1.143v2.014h3.115l-.408 3.156h-2.707v7.687h-3.265z" fill="currentColor"></path></g></svg></span>
+          </a>
+          <a href="https://twitter.com/rustepik" class="page-footer__social-link">
+            <span id="ember3368" class="ember-view svg-icon footer_twitter_icon"><svg viewBox="0 0 32 33" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><rect id="a" width="32" height="32" rx="16"></rect></defs><g fill="none" fill-rule="evenodd"><g transform="translate(0 .5)"><use fill="#FFF" xlink:href="#a"></use><rect stroke="currentColor" x=".5" y=".5" width="31" height="31" rx="15.5"></rect></g><path d="M23.202 13.489a10.514 10.514 0 0 1-.424 3.455c-.29.988-.731 1.938-1.323 2.847a11.193 11.193 0 0 1-2.114 2.412c-.818.699-1.803 1.256-2.957 1.673a10.82 10.82 0 0 1-3.7.624c-2.07 0-3.965-.554-5.684-1.661.267.03.565.045.894.045 1.719 0 3.25-.527 4.595-1.58a3.608 3.608 0 0 1-2.155-.74 3.62 3.62 0 0 1-1.306-1.828c.252.039.485.058.7.058.328 0 .652-.042.973-.126a3.641 3.641 0 0 1-2.125-1.278 3.576 3.576 0 0 1-.843-2.355v-.045c.52.29 1.077.446 1.673.47a3.697 3.697 0 0 1-1.203-1.318 3.606 3.606 0 0 1-.447-1.765c0-.672.168-1.295.504-1.868a10.492 10.492 0 0 0 3.375 2.733 10.312 10.312 0 0 0 4.257 1.14 4.111 4.111 0 0 1-.092-.848c0-1.023.36-1.896 1.083-2.618A3.567 3.567 0 0 1 19.5 9.833c1.07 0 1.97.39 2.704 1.17a7.257 7.257 0 0 0 2.35-.895 3.593 3.593 0 0 1-1.628 2.04 7.374 7.374 0 0 0 2.131-.573 7.755 7.755 0 0 1-1.856 1.914z" fill="currentColor"></path></g></svg></span>
+          </a>
+          <a href="https://vk.com/rustepik" class="page-footer__social-link">
+            <span id="ember3369" class="ember-view svg-icon footer_vk_icon"><svg viewBox="0 0 32 33" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><rect id="a" width="32" height="32" rx="16"></rect></defs><g fill="none" fill-rule="evenodd"><g transform="translate(0 .5)"><use fill="#FFF" xlink:href="#a"></use><rect stroke="currentColor" x=".5" y=".5" width="31" height="31" rx="15.5"></rect></g><path d="M22.343 21.7a4.323 4.323 0 0 1-1.21 1.49 5.742 5.742 0 0 1-1.98 1.007c-.72.205-1.636.303-2.748.303H10v-16h5.652c1.178 0 2.07.04 2.667.14.605.09 1.177.278 1.71.564.572.311.997.72 1.283 1.237.287.515.426 1.113.426 1.785 0 .778-.197 1.474-.59 2.08a3.443 3.443 0 0 1-1.619 1.342v.09c.99.213 1.775.631 2.364 1.27.597.638.892 1.506.892 2.595.008.795-.14 1.49-.442 2.097zm-4.695-8.68c0-.254-.066-.524-.196-.794a1.184 1.184 0 0 0-.622-.59 2.462 2.462 0 0 0-.94-.188c-.36-.008-.9-.017-1.62-.017h-.278v3.39h.507c.687 0 1.161-.008 1.44-.024a2.28 2.28 0 0 0 .85-.23c.32-.147.54-.352.663-.622.122-.262.18-.573.18-.925h.016zm1.014 6.518c0-.5-.098-.876-.302-1.163-.205-.278-.5-.491-.9-.63-.246-.099-.581-.148-1.006-.156a87.982 87.982 0 0 0-1.718-.016H14v4.004h.212c1.047 0 1.767-.008 2.168-.025.4-.016.81-.106 1.227-.286.36-.156.63-.385.802-.696.171-.303.253-.647.253-1.032z" fill="currentColor"></path></g></svg></span>
+          </a>
+      </div>
+  </div>
+
+    <div class="page-footer__row page-footer__row_order_second ">
+      <div class="page-footer__col page-footer__apps">
+          <a class="page-footer__mobapp-link" href="https://itunes.apple.com/ru/app/id1064581926"><span id="ember3370" class="app-store ember-view svg-icon app_store_ru_icon"><svg xmlns="http://www.w3.org/2000/svg" width="135" height="40" viewBox="0 0 135 40"><path fill="#A6A6A6" d="M130.197 40H4.729A4.74 4.74 0 0 1 0 35.267V4.726A4.733 4.733 0 0 1 4.729 0h125.468C132.803 0 135 2.12 135 4.726v30.541c0 2.605-2.197 4.733-4.803 4.733z"></path><path d="M134.032 35.268a3.83 3.83 0 0 1-3.834 3.83H4.729a3.835 3.835 0 0 1-3.839-3.83V4.725A3.84 3.84 0 0 1 4.729.89h125.468a3.834 3.834 0 0 1 3.834 3.835l.001 30.543z"></path><g fill="#FFF"><path d="M30.128 19.784c-.029-3.223 2.639-4.791 2.761-4.864-1.511-2.203-3.853-2.504-4.676-2.528-1.967-.207-3.875 1.177-4.877 1.177-1.022 0-2.565-1.157-4.228-1.123-2.14.033-4.142 1.272-5.24 3.196-2.266 3.923-.576 9.688 1.595 12.859 1.086 1.553 2.355 3.287 4.016 3.226 1.625-.067 2.232-1.036 4.193-1.036 1.943 0 2.513 1.036 4.207.997 1.744-.028 2.842-1.56 3.89-3.127 1.255-1.78 1.759-3.533 1.779-3.623-.041-.014-3.387-1.291-3.42-5.154zM26.928 10.306c.874-1.093 1.472-2.58 1.306-4.089-1.265.056-2.847.875-3.758 1.944-.806.942-1.526 2.486-1.34 3.938 1.421.106 2.88-.717 3.792-1.793z"></path></g><g fill="#FFF"><path d="M53.645 31.504h-2.271l-1.244-3.909h-4.324l-1.185 3.909H42.41l4.284-13.308h2.646l4.305 13.308zm-3.89-5.549L48.63 22.48c-.119-.355-.342-1.191-.671-2.507h-.04a96.75 96.75 0 0 1-.632 2.507l-1.105 3.475h3.573zM64.662 26.588c0 1.632-.441 2.922-1.323 3.869-.79.843-1.771 1.264-2.942 1.264-1.264 0-2.172-.454-2.725-1.362h-.04v5.055H55.5V25.067c0-1.026-.027-2.079-.079-3.159h1.875l.119 1.521h.04c.711-1.146 1.79-1.718 3.238-1.718 1.132 0 2.077.447 2.833 1.342.758.896 1.136 2.074 1.136 3.535zm-2.172.078c0-.934-.21-1.704-.632-2.31-.461-.632-1.08-.948-1.856-.948-.526 0-1.004.176-1.431.523-.428.35-.708.807-.839 1.373-.066.264-.099.48-.099.65v1.6c0 .698.214 1.287.642 1.768s.984.721 1.668.721c.803 0 1.428-.31 1.875-.928.448-.619.672-1.435.672-2.449zM75.699 26.588c0 1.632-.441 2.922-1.324 3.869-.789.843-1.77 1.264-2.941 1.264-1.264 0-2.172-.454-2.724-1.362h-.04v5.055h-2.132V25.067c0-1.026-.027-2.079-.079-3.159h1.875l.119 1.521h.04c.71-1.146 1.789-1.718 3.238-1.718 1.131 0 2.076.447 2.834 1.342.755.896 1.134 2.074 1.134 3.535zm-2.172.078c0-.934-.211-1.704-.633-2.31-.461-.632-1.078-.948-1.855-.948a2.22 2.22 0 0 0-1.432.523c-.428.35-.707.807-.838 1.373-.065.264-.099.48-.099.65v1.6c0 .698.214 1.287.64 1.768.428.48.984.721 1.67.721.803 0 1.428-.31 1.875-.928.448-.619.672-1.435.672-2.449zM88.039 27.772c0 1.132-.393 2.053-1.182 2.764-.867.777-2.074 1.165-3.625 1.165-1.432 0-2.58-.276-3.449-.829l.494-1.777c.936.566 1.963.85 3.082.85.803 0 1.428-.182 1.877-.544.447-.362.67-.848.67-1.454 0-.54-.184-.995-.553-1.364-.367-.369-.98-.712-1.836-1.029-2.33-.869-3.494-2.142-3.494-3.816 0-1.094.408-1.991 1.225-2.689.814-.699 1.9-1.048 3.258-1.048 1.211 0 2.217.211 3.02.632l-.533 1.738c-.75-.408-1.598-.612-2.547-.612-.75 0-1.336.185-1.756.553a1.58 1.58 0 0 0-.533 1.205c0 .526.203.961.611 1.303.355.316 1 .658 1.936 1.027 1.145.461 1.986 1 2.527 1.618.539.616.808 1.387.808 2.307zM95.088 23.508h-2.35v4.659c0 1.185.414 1.777 1.244 1.777.381 0 .697-.033.947-.099l.059 1.619c-.42.157-.973.236-1.658.236-.842 0-1.5-.257-1.975-.77-.473-.514-.711-1.376-.711-2.587v-4.837h-1.4v-1.6h1.4v-1.757l2.094-.632v2.389h2.35v1.602zM105.691 26.627c0 1.475-.422 2.686-1.264 3.633-.883.975-2.055 1.461-3.516 1.461-1.408 0-2.529-.467-3.365-1.401s-1.254-2.113-1.254-3.534c0-1.487.43-2.705 1.293-3.652.861-.948 2.023-1.422 3.484-1.422 1.408 0 2.541.467 3.396 1.402.818.907 1.226 2.078 1.226 3.513zm-2.212.069c0-.885-.189-1.644-.572-2.277-.447-.766-1.086-1.148-1.914-1.148-.857 0-1.508.383-1.955 1.148-.383.634-.572 1.405-.572 2.317 0 .885.189 1.644.572 2.276.461.766 1.105 1.148 1.936 1.148.814 0 1.453-.39 1.914-1.168.393-.645.591-1.412.591-2.296zM112.621 23.783a3.702 3.702 0 0 0-.672-.059c-.75 0-1.33.283-1.738.85-.355.5-.533 1.132-.533 1.895v5.035h-2.131l.02-6.574c0-1.106-.027-2.113-.08-3.021h1.857l.078 1.836h.059c.225-.631.58-1.139 1.066-1.52a2.578 2.578 0 0 1 1.541-.514c.197 0 .375.014.533.039v2.033zM122.156 26.252a5 5 0 0 1-.078.967h-6.396c.025.948.334 1.673.928 2.173.539.447 1.236.671 2.092.671.947 0 1.811-.151 2.588-.454l.334 1.48c-.908.396-1.98.593-3.217.593-1.488 0-2.656-.438-3.506-1.313-.848-.875-1.273-2.05-1.273-3.524 0-1.447.395-2.652 1.186-3.613.828-1.026 1.947-1.539 3.355-1.539 1.383 0 2.43.513 3.141 1.539.563.815.846 1.823.846 3.02zm-2.033-.553c.014-.632-.125-1.178-.414-1.639-.369-.593-.936-.889-1.699-.889-.697 0-1.264.289-1.697.869-.355.461-.566 1.014-.631 1.658h4.441z"></path></g><g fill="#FFF"><path d="M43.424 7.273c.227-.136.483-.25.771-.344a3.267 3.267 0 0 1 1.014-.141c.627 0 1.121.149 1.483.446s.543.698.543 1.203c0 .401-.121.737-.363 1.009s-.552.453-.927.543v.029c.207.033.403.089.587.17.185.081.347.189.485.325a1.471 1.471 0 0 1 .451 1.078c0 .362-.073.666-.219.912s-.336.446-.572.602c-.235.155-.499.267-.79.334s-.582.102-.873.102c-.311 0-.618-.033-.922-.097s-.585-.171-.844-.32l.262-.805c.168.084.385.165.65.243.265.078.533.116.805.116.446 0 .791-.1 1.033-.3a.994.994 0 0 0 .364-.805.987.987 0 0 0-.146-.558 1.064 1.064 0 0 0-.379-.345 1.655 1.655 0 0 0-.519-.174 3.43 3.43 0 0 0-.567-.049h-.437V9.65h.437c.2 0 .386-.025.558-.078.171-.051.32-.124.446-.218s.225-.206.296-.335a.903.903 0 0 0 .106-.437c0-.291-.104-.519-.311-.684-.207-.165-.485-.248-.834-.248-.239 0-.479.039-.718.116a5.295 5.295 0 0 0-.641.252l-.229-.745zM51.755 13.433l-.077-.543h-.029c-.316.433-.775.65-1.377.65-.214 0-.407-.036-.582-.107s-.327-.168-.456-.291a1.285 1.285 0 0 1-.301-.437 1.408 1.408 0 0 1-.106-.553c0-.588.239-1.03.718-1.324.479-.294 1.157-.441 2.037-.441V10.3c0-.621-.326-.931-.978-.931-.465 0-.875.117-1.229.349l-.213-.688c.433-.271.972-.407 1.617-.407 1.233 0 1.85.65 1.85 1.95v1.736c0 .485.023.86.068 1.125h-.942zm-.145-2.347c-.585 0-1.021.074-1.307.223-.286.149-.429.392-.429.728 0 .246.067.43.202.553a.731.731 0 0 0 .512.184 1.05 1.05 0 0 0 .708-.272.988.988 0 0 0 .228-.306.866.866 0 0 0 .086-.383v-.727zM57.683 8.719v.863h-1.96v3.851h-1.047V8.719h3.007zM63.677 11.018c0 .375-.052.718-.155 1.028a2.39 2.39 0 0 1-.432.795 1.932 1.932 0 0 1-1.508.699c-.621 0-1.067-.223-1.339-.669h-.02v2.483h-1.048v-5.083a38.698 38.698 0 0 0-.038-1.553h.921l.059.747h.02c.349-.562.879-.844 1.591-.844.277 0 .535.058.771.174.236.117.441.28.616.49.175.21.312.462.412.757.1.295.15.62.15.976zm-1.066.039c0-.233-.028-.448-.083-.645s-.136-.365-.242-.504-.236-.249-.388-.33a1.067 1.067 0 0 0-.51-.121c-.148 0-.294.033-.437.097s-.267.152-.373.262c-.107.11-.192.243-.257.398-.065.155-.098.32-.098.495v.786c0 .174.027.336.083.485.055.149.132.278.232.388s.22.196.359.257c.139.062.292.092.46.092.395 0 .702-.15.922-.451s.332-.705.332-1.209zM69.305 8.719l-1.194 3.269c-.284.776-.561 1.411-.829 1.906-.269.495-.525.855-.771 1.082-.362.323-.747.521-1.155.591l-.252-.882c.271-.071.53-.21.776-.417.245-.207.442-.465.592-.776a.594.594 0 0 0 .077-.213.88.88 0 0 0-.058-.223L64.783 8.72h1.154l.893 2.629c.046.123.091.262.136.417.046.155.094.327.146.514h.02a6.41 6.41 0 0 0 .106-.393c.039-.158.091-.341.155-.548l.796-2.619h1.116zM71.119 10.678h.484c.355 0 .631-.064.824-.194s.291-.288.291-.476a.54.54 0 0 0-.248-.465c-.164-.116-.393-.175-.684-.175-.188 0-.377.031-.566.092a2.98 2.98 0 0 0-.529.228l-.271-.678a2.9 2.9 0 0 1 .811-.305 4.01 4.01 0 0 1 .809-.083c.215 0 .43.021.646.063.215.042.408.113.576.213s.307.231.412.393c.107.162.16.362.16.602 0 .149-.029.28-.088.393a1.017 1.017 0 0 1-.232.3 1.254 1.254 0 0 1-.324.213 1.743 1.743 0 0 1-.363.122v.029c.154.02.305.059.451.117.145.058.275.134.393.228.115.094.209.207.281.339.07.133.105.283.105.451 0 .278-.066.511-.203.698a1.46 1.46 0 0 1-.52.446 2.51 2.51 0 0 1-.693.238 3.938 3.938 0 0 1-1.599-.019 2.71 2.71 0 0 1-.768-.286l.273-.689c.168.091.359.167.576.228s.438.092.664.092c.355 0 .629-.069.82-.208.189-.139.285-.312.285-.519 0-.136-.031-.25-.096-.344s-.156-.17-.271-.228a1.33 1.33 0 0 0-.408-.121 3.444 3.444 0 0 0-.504-.034h-.494v-.661zM76.715 8.719v1.668c0 .382-.006.725-.02 1.028-.014.304-.029.624-.049.96l.02.019.363-.723c.121-.236.242-.477.365-.723l1.164-2.231h1.357v4.714h-.99v-1.668c0-.349.01-.698.025-1.047.016-.35.033-.702.053-1.058h-.049a6.95 6.95 0 0 1-.33.757c-.109.213-.219.433-.328.66-.201.388-.4.776-.598 1.164-.197.388-.406.786-.625 1.193h-1.357V8.719h.999zM85.445 8.719v.863H84.01v3.851h-1.03V9.582h-1.426v-.863h3.891zM90.789 10.853c0 .09-.004.176-.01.257a1.753 1.753 0 0 1-.029.218h-3.143c.014.446.154.791.422 1.033.268.242.623.364 1.062.364.459 0 .883-.074 1.271-.223l.164.728c-.447.194-.973.291-1.582.291-.367 0-.697-.057-.988-.17a2.044 2.044 0 0 1-.738-.48 2.12 2.12 0 0 1-.461-.747c-.105-.291-.158-.617-.158-.979s.053-.697.158-1.004c.107-.307.258-.574.451-.8.195-.227.43-.404.703-.534.275-.129.582-.194.918-.194a2 2 0 0 1 .811.16c.242.106.449.258.619.456.172.197.303.434.393.708.092.274.137.58.137.916zm-1-.271c0-.369-.088-.668-.266-.897s-.435-.345-.771-.345c-.305 0-.562.116-.775.349s-.336.53-.369.893h2.181zM95.01 8.758c.188-.032.426-.058.717-.078s.588-.029.893-.029c.193 0 .412.012.654.034s.475.074.693.155c.221.081.404.202.553.364s.225.381.225.659a.916.916 0 0 1-.287.679 1.155 1.155 0 0 1-.301.208c-.113.055-.23.096-.354.121l.01.029c.342.058.621.181.834.369s.32.446.32.776-.092.592-.271.786c-.182.194-.404.34-.67.437a3.277 3.277 0 0 1-.84.185 9.444 9.444 0 0 1-.789.039c-.26 0-.514-.006-.762-.02-.25-.013-.457-.026-.625-.039V8.758zm1.008 1.882h.533c.162 0 .316-.011.461-.034.146-.022.273-.058.383-.106a.647.647 0 0 0 .258-.194.477.477 0 0 0 .092-.296.5.5 0 0 0-.268-.47c-.178-.1-.457-.15-.838-.15-.109 0-.205.003-.287.01l-.334.029v1.211zm0 2.085c.129.013.238.022.324.029a3.925 3.925 0 0 0 .743-.019 1.45 1.45 0 0 0 .408-.111.75.75 0 0 0 .295-.222.58.58 0 0 0 .113-.371c0-.27-.121-.456-.359-.559-.24-.103-.562-.154-.971-.154h-.553v1.407z"></path></g></svg></span></a>
+          <a class="page-footer__mobapp-link" href="https://play.google.com/store/apps/details?id=org.stepic.droid&amp;utm_source=global_co&amp;utm_medium=prtnr&amp;utm_content=Mar2515&amp;utm_campaign=PartBadge&amp;pcampaignid=MKT-AC-global-none-all-co-pr-py-PartBadges-Oct1515-1">
+            <img alt="Get it on Google Play" src="Flex%20-%20Stepik_2_files/ru-play-badge.png">
+          </a>
+      </div>
+      <div class="page-footer__col page-footer__CC-note">
+        Public user contributions licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">cc-wiki</a> license with attribution required
+      </div>
+    </div>
+</div>
+</footer>
+
+  <div id="context_menu"></div>
+
+<!---->
+</div></div><div id="dom_ruler-text_measurer" style="position: absolute; left: -10010px; top: -10px; width: 10000px; height: 0px; overflow: hidden; visibility: hidden;"><div></div></div></body><div><div class="gr_-editor gr-iframe-first-load" style="display: none;"><div class="gr_-editor_back"></div><iframe class="gr_-ifr gr-_dialog-content"></iframe></div></div><grammarly-card><div></div></grammarly-card></html>

@@ -1,0 +1,8 @@
+position= initial+ rate* 60
+VARIABLE position 
+TOKEN = 
+VARIABLE initial 
+TOKEN + 
+VARIABLE rate 
+TOKEN * 
+NUMBER 60 
