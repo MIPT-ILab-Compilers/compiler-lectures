@@ -1,0 +1,21 @@
+
+cycle.cl :
+--------
+class A inherits B { };
+class B inherits A { };
+class Main {
+  main():Int { 0 };
+};
+--------
+example.cl:7: Class B, or an ancestor of B, is involved in an inheritance cycle.
+example.cl:6: Class A, or an ancestor of A, is involved in an inheritance cycle.
+Compilation halted due to static semantic errors.
+--------
+
+ctags ?
+
+
++ остаток лекции Codegen_3 со стр. 17
+
+
+
