@@ -1,4 +1,7 @@
-# Курс «Теория и практика компиляции программ», 2018/2019 учебный год
+# Курс «Теория и практика компиляции программ»
+_2018/2019 учебный год_
+
+_Преподаватели курса: Игорь Горбань, Кирилл Юхин_
 
 ## Лекции
 
@@ -29,4 +32,8 @@
 
 ## Рекомендуемая литература
 
-## [YouTube канал](https://www.youtube.com/playlist?list=PLhJz09Rm90DoAPr5CKSuaze-x0Tjl1k4w)
+* Альфред В. Ахо, Моника С. Лам, Рави Сети, Джеффри Д. Ульман **[«Компиляторы: принципы, технологии и инструментарий», 2-е изд.](https://lib.mipt.ru/book/266014/)**
+* Р. Хантер **[«Проектирование и конструирование компиляторов»](https://lib.mipt.ru/book/7079)**
+* Alex Aiken's **[course in Stanford](https://lagunita.stanford.edu/courses/Engineering/Compilers/Fall2014/about)**
+
+### [YouTube канал](https://www.youtube.com/playlist?list=PLhJz09Rm90DoAPr5CKSuaze-x0Tjl1k4w)
